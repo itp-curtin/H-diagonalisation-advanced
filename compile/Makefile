@@ -2,11 +2,16 @@
 #------------------------------------------------------------------------------
 # directories (relative to the compile directory)
 #------------------------------------------------------------------------------
-SRC_DIR    = ../src                        # this is the place where the source code files are located
-BUILD_DIR  = ../build                      # this is where we will put the executable and other build files
-OBJ_DIR    = $(BUILD_DIR)/obj              # this is where we will put the object files
-MOD_DIR    = $(BUILD_DIR)/mod              # this is where we will put the module files
-FPARSE_SRC_DIR = ../external/fparse/src    # this is where the fparse source code files are located
+# source code files
+SRC_DIR = ../src
+# executable and other build files
+BUILD_DIR = ../build
+# object files
+OBJ_DIR = $(BUILD_DIR)/obj
+# module files
+MOD_DIR = $(BUILD_DIR)/mod
+# fparse source code files
+FPARSE_SRC_DIR = ../external/fparse/src
 
 #------------------------------------------------------------------------------
 # set compiler
