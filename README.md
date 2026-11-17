@@ -55,25 +55,19 @@ git clone git@github.com:itp-curtin/H-diagonalisation.git
    of $\zeta$ for the $1s$ state change as you change $Z$?
 
 ## Compilation
-To compile this code, you will need to have a Fortran compiler and LAPACK
-library installed on your machine. If on a Linux-based system (or running WSL on
-Windows), you can install these by running the following command in the terminal:
 
-```bash
-sudo apt update
-sudo apt install gfortran liblapack-dev
+Assuming this exercise is being done on the Setonix supercomputer, to compile 
+this code you will first need to load the following modules by entering the 
+following into your command line:
+
+```
+module load PrgEnv-gnu
+module load cray-libsci
 ```
 
-If you are on a mac OS system, you can install these using Homebrew by running
-the following command in the terminal:
-
-```bash
-brew install gfortran lapack
-```
-
-You will also need to have pulled the fortran parser library `fparse` from
-GitHub and installed it on your machine. Inside the repo directory, you can run
-the following command to pull the library:
+You will also need to have pulled the Fortran input file parser library `fparse` 
+from GitHub and installed it on your machine. Inside the repo directory, you 
+can run the following command to pull the library:
 
 ```bash
 git submodule update --init --recursive
@@ -87,7 +81,7 @@ make
 ```
 
 This will create an directory outside the `compile/` directory called
-`build/` which will contain the final executable `h_diagonalisation.exe` and 
+`build/` which will contain the final executable `h_diagonalisation.exe` 
 as well as all the object and module files generated during the compilation 
 process.
 

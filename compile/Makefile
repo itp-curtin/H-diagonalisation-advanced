@@ -16,7 +16,7 @@ FPARSE_SRC_DIR = ../external/fparse/src
 #------------------------------------------------------------------------------
 # set compiler
 #------------------------------------------------------------------------------
-FC = gfortran
+FC = ftn
 
 #------------------------------------------------------------------------------
 # set flags
@@ -26,8 +26,8 @@ FC_MODULE_DIR_FLAG ?= -J$(MOD_DIR)
 FC_LINE_LENGTH_FLAG ?= -ffree-line-length-none
 FCFLAGS  = $(FC_MODULE_DIR_FLAG) -I$(MOD_DIR) $(FC_LINE_LENGTH_FLAG)
 
-FC_DEBUG = -g -O0 -llapack
-FC_PROD  = -O3 -llapack
+FC_DEBUG = -g -O0 
+FC_PROD  = -O3 
 
 # debugging checks
 ifeq ($(debug), on)
