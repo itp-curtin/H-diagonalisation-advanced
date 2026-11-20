@@ -34,12 +34,12 @@ git clone git@github.com:itp-curtin/H-diagonalisation.git
    `src/matrix_elements.f90` to generate the Hamiltonian matrix for atomic 
     hydrogen.
 
-4. Starting with $l=0$ orbital angular momentum and scale parameter 
+4. Starting with $\ell=0$ orbital angular momentum and scale parameter 
    $\zeta = 1$, run the program with basis sizes of 5, 10, 20, 30, and 50. In
    each case how many solutions agree with the exact energy eigenvalues of
    atomic hydrogen?
 
-5. Test the program for states with different $l$ to ensure that the
+5. Test the program for states with different $\ell$ to ensure that the
    implementation is correct for not just $s$-states.
 
 6. For a fixed basis size of 30, vary the scale parameter $\zeta$ and see how it 
@@ -47,7 +47,7 @@ git clone git@github.com:itp-curtin/H-diagonalisation.git
    What happens if you decrease/increase $\zeta$? 
 
 7. Create a new module/subroutines to print the radial wavefunctions 
-   $u_{n,l}(r)$ to a file. Compare with the pseudostate results in 
+   $u_{n,\ell}(r)$ to a file. Compare with the pseudostate results in 
    `solutions/wavefunctions/` to check your implementation is correct.
 
 8. Implement the analytical formula for the exact solutions
